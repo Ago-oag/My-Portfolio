@@ -1,0 +1,380 @@
+body {
+  max-width: 1440px;
+}
+/* ヘッダー */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #FF6302;
+  margin: 0;
+}
+
+.menu-bar {
+ color: #fff;
+ font-size: 18px;
+ align-items: center;
+ list-style: none;
+ font-weight: bold;
+ display: flex;
+ justify-content: space-around;
+ height: 100%;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  color: #fff;
+}
+
+.menu-bar a:hover {
+  opacity: .6;
+  transition: .5;
+}
+
+/* ボディのレスポンシブ設定 */
+@media screen and (max-width: 414px){
+  body {
+    width: 100%;
+  }
+  header {
+    display: none;
+  }
+}
+
+/* アイキャッチ */
+.eyechach {
+  width: 100%;
+  height: 980px;
+  background-image: url(../img/tokyo-2193354_1920-1.jpg);
+  background-size: cover;
+}
+
+.eyechach-riw {
+  display: flex;
+  flex-direction: row;
+}
+
+.eyechach-riw img {
+  transform: rotate(345deg);
+  padding: 200px 100px;
+  width: 530px;
+  height: 550px;
+}
+
+.eyechach-riw h1 {
+  color: #fff;
+  font-size: 300px;
+  font-weight: bold;
+  flex-direction: row;
+  transform: rotate(345deg);
+  padding:150px 50px;
+  box-sizing: border-box;
+}
+
+/* アイキャッチのレスポンシブ設定 */
+@media screen and (max-width: 414px){
+  .eyechach {
+    width: 100%;
+    height: 740px;
+    background-image: url(../img/trajectory-of-the-star-2130655_640-1.jpg);
+    background-size: cover;
+  }
+
+  .eyechach-riw {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .eyechach-riw img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    transform: rotate(0deg);
+    padding: 200px 20px;
+  }
+
+  .eyechach-riw h1 {
+    color: #fff;
+    font-size: 100px;
+    padding: 0 0;
+    margin-top: 70px;
+    margin-right: 300px;
+    transform: rotate(0deg);
+  }
+}
+
+/* セクション１ */
+.section1 {
+  width: 100%;
+  height: 780px;
+}
+
+.section1 h2 {
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 60px 50px;
+  transform: rotate(350deg);
+}
+
+.hwef {
+  display: flex;
+  flex-direction: row;
+}
+
+.hwef p {
+  color: #888484;
+  font-size: 20px;
+  padding: 100px 50px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.hwef img {
+  padding: 50px 50px  150px 100px;
+  height: 478px;
+  width: 780px;
+}
+
+/* セクション１のレスポンシブ設定 */
+@media screen and (max-width: 414px){
+   .section1 {
+     width: 100%;
+     height: 780px;
+   }
+
+   .hwef {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .hwef p {
+     color: #888484;
+     font-size: 12px;
+     padding: 50px 25px;
+     text-align: justify;
+   }
+
+   .hwef img {
+     width: 388px;
+     height: 290px;
+     border-radius: 12px;
+     padding: 0 0;
+     margin-left: 12px;
+   }
+}
+
+
+/* セクション２ */
+.section2 {
+  width: 100%;
+  height: 810px;
+}
+
+.oehr h2 {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 30px 50px  30px 700px;
+  transform: rotate(10deg);
+}
+
+.fjw {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fjw p {
+  color: #888484;
+  font-size: 20px;
+  padding: 100px 50px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.fjw img {
+  padding: 50px 50px  150px 70px;
+  width:728px;
+  height:472px;
+}
+
+/* セクション２のレスポンシブ設定 */
+@media screen and (max-width: 414px){
+  .section2 {
+    width: 100%;
+    height: 810px;
+  }
+
+  .oehr h2 {
+    display: none;
+  }
+
+  .fjw {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fjw p {
+    color: #888484;
+    font-size: 12px;
+    padding: 50px 25px;
+  }
+
+  .fjw img {
+    width: 388px;
+    height: 290px;
+    border-radius: 12px;
+    padding: 0 0;
+    margin-left: 12px;
+  }
+}
+/* ↑セクション２のレスポンシブ設定ここまで */
+
+
+/* セクション３ */
+.section3 {
+  width: 100%;
+  height: 850px;
+}
+
+.section3 h2 {
+  color: black;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section3 p {
+  color: #888484;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.lunchpack {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.sait {
+ width: 360px;
+ height: 560px;
+ justify-content: space-around;
+ margin-right: 30px;
+ background-color: #CDD6DD;
+ box-sizing: border-box;
+}
+
+.sait img {
+  max-width: 100%;
+  height: 360px;
+}
+
+.sait h5 {
+  color: #6F7579;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.sait p {
+  font-size: 15px;
+  color: #6F7579;
+}
+
+/* セクション３のレスポンシブ設定 */
+@media screen and (max-width: 414px){
+  .section3 {
+    width: 100%;
+    height: 2000px;
+  }
+
+  .section3 h2 {
+    font-size: 60px;
+  }
+
+  .section3 p {
+    font-size: 18px;
+  }
+
+  .lunchpack {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+  }
+
+  .sait {
+    background-color: #fff;
+  }
+
+  .sait h5 {
+    font-size: 20px;
+  }
+
+  .sait p {
+    font-size: 14px;
+  }
+}
+
+
+/* ラスト（自分の問い合わせ先） */
+.last {
+ max-width: 100%;
+ height: 780px;
+ background-image: url(../img/natural-2065714_1920-1.jpg);
+}
+
+.last h1 {
+  color: #fff;
+  font-size: 120px;
+  font-weight: bold;
+  padding-top: 60px;
+  transform: rotate(347deg);
+}
+
+.contact {
+ padding-top: 170px;
+ padding-left: 320px;
+ line-height: 1.5;
+}
+
+.contact h3 {
+  font-size: 80px;
+  color: #fff;
+}
+
+.contact h6 {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* ラストのレスポンシブ設定 */
+@media screen and (max-width: 414px){
+  .last {
+    width: 100%;
+    height: 780px;
+  }
+
+  .last h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .contact {
+    padding: 0 0;
+    margin: 100px 20px;
+  }
+  .contact h3 {
+    font-size: 40px;
+  }
+
+  .contact h6 {
+    font-size: 20px;
+  }
+}
